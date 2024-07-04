@@ -534,7 +534,7 @@ func (wallet *WalletAPI) Reset(scanHeight int) error {
 }
 
 // ValidateAddress method validates an address for
-// XTE compatibility and returns the address break-down
+// XTCASH compatibility and returns the address break-down
 func (wallet *WalletAPI) ValidateAddress(address string) (map[string]interface{}, error) {
 	err := wallet.check()
 	if err != nil {

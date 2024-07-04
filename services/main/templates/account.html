@@ -52,11 +52,11 @@
       </tr>
       <tr>
         <th>Available</th>
-        <td><span id="available_balance">{{ printf "%.2f" (index .Wallet "balance" "availableBalance") }}</span> XTE</td>
+        <td><span id="available_balance">{{ printf "%.2f" (index .Wallet "balance" "availableBalance") }}</span> XTCASH</td>
       </tr>
       <tr>
         <th>Locked / Unconfirmed</th>
-        <td><span id="locked_amount">{{ printf "%.2f" (index .Wallet "balance" "lockedAmount") }}</span> XTE</td>
+        <td><span id="locked_amount">{{ printf "%.2f" (index .Wallet "balance" "lockedAmount") }}</span> XTCASH</td>
       </tr>
       <tr>
         <th>Address</th>
@@ -73,7 +73,7 @@
 <div class="table-container">
     <form action={{ printf "%s%s" .PageAttr.URI "/account/send_transaction"}} method="POST">
       <div class="input-field grey-input">
-        <h2>Send Transaction</h2><small>fee: 1 XTE</small><br>
+        <h2>Send Transaction</h2><small>fee: 1 XTCASH</small><br>
         <span class="caret-icon"></span>
         <input id="send_to" type="text" name="destination" placeholder="Enter destination address..." pattern="^XT([a-zA-Z0-9]{95}|[a-zA-Z0-9]{183})\s*$" required/>
         <span class="amount-icon"></span>
@@ -100,7 +100,7 @@
       <label class="close" title="close" for="alert1">&times</label>
       <p class="inner">
           <strong class="center-text">Transaction Hash</strong>
-          <a href="https://explorer.traaitt.com/?hash={{ index .PageAttr.Messages "txHash" }}#blockchain_transaction" target="_blank">
+          <a href="https://explorer.traaittxtcash.com/?hash={{ index .PageAttr.Messages "txHash" }}#blockchain_transaction" target="_blank">
               {{ index .PageAttr.Messages "txHash" }}
           </a>
       </p>
@@ -120,11 +120,11 @@
           {{ if (index $ele "Destination") }}
           <td><b>Withdrawal</b><br></td>
           <td><b>Recipient</b><br>{{ index $ele "Destination" }}<br><b>Hash</b><br>{{ index $ele "Hash" }}<br><b>PaymentId</b><br>"{{ index $ele "PaymentID" }}"</td>
-          <td><b>Amount</b><br>{{ index $ele "Amount" }}&nbsp;XTE</td>
+          <td><b>Amount</b><br>{{ index $ele "Amount" }}&nbsp;XTCASH</td>
           {{ else }}
           <td><strong>Deposit</strong></td>
           <td><b>Hash</b><br>{{ index $ele "Hash" }}<br><b>PaymentId</b><br>"{{ index $ele "PaymentID" }}"</td>
-          <td><b>Amount</b><br>{{ index $ele "Amount" }}&nbsp;XTE</td>
+          <td><b>Amount</b><br>{{ index $ele "Amount" }}&nbsp;XTCASH</td>
           {{ end }}
         </tr>
         {{ end }}

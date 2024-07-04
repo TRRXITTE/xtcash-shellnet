@@ -1,16 +1,16 @@
 2024/05/30 11:13:28 Info: Starting Service on: http://localhost:8080
 2024/05/30 11:13:28 listen tcp :8080: bind: address already in use
-2024/05/30 11:14:00 Info: Starting Service on: https://wallet.traaitt.com:8080
+2024/05/30 11:14:00 Info: Starting Service on: https://wallet.traaittxtcash.com:8080
 2024/05/30 11:14:00 listen tcp :8080: bind: address already in use
-2024/05/30 11:16:12 Info: Starting Service on: https://wallet.traaitt.com:8080
-2024/05/30 11:16:34 Info: Starting Service on: https://wallet.traaitt.com:8080
+2024/05/30 11:16:12 Info: Starting Service on: https://wallet.traaittxtcash.com:8080
+2024/05/30 11:16:34 Info: Starting Service on: https://wallet.traaittxtcash.com:8080
 2024/05/30 11:43:47 Info: Starting Service on: http://localhost:8080
 2024/05/30 11:54:41 Info: Starting Service on: http://localhost:8080
 2024/05/30 12:01:47 Info: Starting Service on: http://35.194.36.164:8080
 2024/05/30 12:22:51 Info: Starting Service on: http://35.194.36.164:8080
 2024/05/30 12:53:49 Info: Starting Service on: http://35.194.36.164:8080
-2024/05/30 13:06:58 Info: Starting Service on: https://wallet.traaitt.com:8080
-2024/05/30 13:08:05 Info: Starting Service on: https://wallet.traaitt.com:443
+2024/05/30 13:06:58 Info: Starting Service on: https://wallet.traaittxtcash.com:8080
+2024/05/30 13:08:05 Info: Starting Service on: https://wallet.traaittxtcash.com:443
 2024/05/30 13:08:05 listen tcp :443: bind: permission denied
 2024/05/30 13:08:40 Info: Starting Service on: 0.0.0.0:8080
 2024/05/30 13:19:45 Info: Starting Service on: 0.0.0.0:8080
@@ -46,8 +46,8 @@
 2024/05/31 08:44:43 Attempting to create account: username length = 11, password length = 11
 2024/05/31 08:51:38 Info: Starting Service on: 0.0.0.0:8080
 2024/05/31 08:53:27 Info: Starting Service on: localhost:8080
-2024/05/31 08:55:03 Info: Starting Service on: https://wallet.traaitt.com:8080
-2024/05/31 08:55:35 Info: Starting Service on: https://wallet.traaitt.com:443
+2024/05/31 08:55:03 Info: Starting Service on: https://wallet.traaittxtcash.com:8080
+2024/05/31 08:55:35 Info: Starting Service on: https://wallet.traaittxtcash.com:443
 2024/05/31 08:55:35 listen tcp :443: bind: permission denied
 2024/05/31 08:56:04 Info: Starting Service on: http://localhost:8080
 2024/05/31 08:58:09 Info: Starting Service on: http://0.0.0.0:8080

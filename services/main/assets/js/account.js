@@ -1,5 +1,5 @@
 // Forking config.
-const tickerSymbol = 'XTE';
+const tickerSymbol = 'XTCASH';
 const decimalPlaces = 2;
 
 // Wallet update interval in milliseconds. Probably don't need to change this.

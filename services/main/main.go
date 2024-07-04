@@ -24,7 +24,7 @@ func main() {
     log.Println("Info: Starting Service on HTTPS")
 
     // Provide the paths to your SSL certificate and key files
-    certFile := "/etc/letsencrypt/live/wallet.traaitt.com/fullchain.pem"
-    keyFile := "/etc/letsencrypt/live/wallet.traaitt.com/privkey.pem"
+    certFile := "/etc/letsencrypt/live/wallet.traaittxtcash.com/fullchain.pem"
+    keyFile := "/etc/letsencrypt/live/wallet.traaittxtcash.com/privkey.pem"
     log.Fatal(srv.ListenAndServeTLS(certFile, keyFile))
 }
