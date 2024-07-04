@@ -1,0 +1,6 @@
+github.com/julienschmidt/httprouter v1.3.0 h1:U0609e9tgbseu3rBINet9P48AI/D3oJs4dN7jwJOQ1U=
+github.com/julienschmidt/httprouter v1.3.0/go.mod h1:JR6WtHb+2LUe8TCKY3cZOxFyyO8IZAc4RVcycCCAKdM=
+github.com/lib/pq v1.10.9 h1:YXG7RB+JIjhP29X+OtkiDnYaXQwpS4JEWq7dtCCRUEw=
+github.com/lib/pq v1.10.9/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
+github.com/traaitt/turtlecoin-rpc-go v0.0.0-20200628203812-a4fb03b21e02 h1:mCYYa++UtSkifodAFRRiH2pFPHFX3P0vZAVBBI74sTs=
+github.com/traaitt/turtlecoin-rpc-go v0.0.0-20200628203812-a4fb03b21e02/go.mod h1:TD2A0g3sxb7Mmfxnt5Wy0QjqRR/PXjAbl4DVYuamXno=

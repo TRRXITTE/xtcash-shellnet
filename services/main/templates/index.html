@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/unnamed" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="/assets/css/main.css"/>
+        <link rel="icon" href="/assets/images/fav_icon.ico" type="image/x-icon">
+        <meta name="description" content="A secure, easy-to-use wallet for XTE payments. ">
+        <title>XTE online wallet</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W49CYJXYQ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W49CYJXYQ9');
+</script>    </head>
+    <body>
+        <div class="full-container">
+            <div class="content">
+                <div class="content-panel">
+                    <!-- Use this for just text -->
+                    <!--<span class="title landing-title">SHELLNET</span>-->
+                    <!-- Use this for brand logo -->
+                    <img src="/assets/images/brand-logo.png" class="landing-logo"></img>
+                    <span class="tagline">A secure, easy-to-use wallet for XTE payments</span>
+                    {{ if .User }}
+                        <span class="hello-user">Hello {{ .User.Username }}</span>
+    		            <a href="/account"><button class="btn btn-primary button-green">account</button></a>
+    		            <a href="/logout" class="signup-link"><span>logout</span></a>
+                    {{ else }}
+    		            <a href="/login"><button class="btn btn-primary button-green">login</button></a>
+    		            <a href="/signup" class="signup-link"><span>create an account</span></a>
+                    {{ end }}
+                </div>
+            </div>
+            <footer class="footer">
+                <code>TRRXITTE Int., incorporate &copy; 2024</code>
+            </footer>
+        </div>
+    </body>
+</html>

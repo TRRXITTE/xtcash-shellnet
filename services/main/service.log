@@ -1,0 +1,53 @@
+2024/05/30 11:13:28 Info: Starting Service on: http://localhost:8080
+2024/05/30 11:13:28 listen tcp :8080: bind: address already in use
+2024/05/30 11:14:00 Info: Starting Service on: https://wallet.traaitt.com:8080
+2024/05/30 11:14:00 listen tcp :8080: bind: address already in use
+2024/05/30 11:16:12 Info: Starting Service on: https://wallet.traaitt.com:8080
+2024/05/30 11:16:34 Info: Starting Service on: https://wallet.traaitt.com:8080
+2024/05/30 11:43:47 Info: Starting Service on: http://localhost:8080
+2024/05/30 11:54:41 Info: Starting Service on: http://localhost:8080
+2024/05/30 12:01:47 Info: Starting Service on: http://35.194.36.164:8080
+2024/05/30 12:22:51 Info: Starting Service on: http://35.194.36.164:8080
+2024/05/30 12:53:49 Info: Starting Service on: http://35.194.36.164:8080
+2024/05/30 13:06:58 Info: Starting Service on: https://wallet.traaitt.com:8080
+2024/05/30 13:08:05 Info: Starting Service on: https://wallet.traaitt.com:443
+2024/05/30 13:08:05 listen tcp :443: bind: permission denied
+2024/05/30 13:08:40 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 13:19:45 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 13:28:02 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 13:28:26 Failed to create account for user test: pq: value too long for type character(585)
+2024/05/30 13:36:16 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 13:36:39 Failed to create account for user test: Username taken
+2024/05/30 13:37:05 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 13:38:27 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 13:41:18 Failed to create account for user test2: pq: value too long for type character(585)
+2024/05/30 13:41:56 Failed to create account for user test3: pq: value too long for type character(585)
+2024/05/30 13:47:04 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 13:47:32 Failed to create account for user test22: pq: value too long for type character(585)
+2024/05/30 13:50:19 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 13:50:45 Failed to create account for user test23: pq: permission denied for sequence accounts_id_seq
+2024/05/30 13:53:51 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 13:54:14 Failed to create account for user wallet: pq: permission denied for sequence accounts_id_seq
+2024/05/30 13:55:39 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 13:57:57 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 14:04:04 Failed to create account for user testwallet: Username taken
+2024/05/30 14:04:16 Failed to create account for user testwallet: Username taken
+2024/05/30 14:04:33 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 14:08:22 Info: Starting Service on: 0.0.0.0:8080
+2024/05/30 14:08:41 Failed to create account for user test: pq: value too long for type character(585)
+2024/05/31 08:20:32 Info: Starting Service on: 0.0.0.0:8080
+2024/05/31 08:31:22 Info: Starting Service on: 0.0.0.0:8080
+2024/05/31 08:33:03 Attempting to create account: username length = 11, password length = 11
+2024/05/31 08:33:03 Failed to create account for user testwallet1: pq: value too long for type character(585)
+2024/05/31 08:37:45 Info: Starting Service on: 0.0.0.0:8080
+2024/05/31 08:38:22 Attempting to create account: username length = 11, password length = 11
+2024/05/31 08:38:22 Failed to create account for user testwallet1: Internal error: IH or Verifier too long
+2024/05/31 08:44:23 Attempting to create account: username length = 11, password length = 11
+2024/05/31 08:44:43 Attempting to create account: username length = 11, password length = 11
+2024/05/31 08:51:38 Info: Starting Service on: 0.0.0.0:8080
+2024/05/31 08:53:27 Info: Starting Service on: localhost:8080
+2024/05/31 08:55:03 Info: Starting Service on: https://wallet.traaitt.com:8080
+2024/05/31 08:55:35 Info: Starting Service on: https://wallet.traaitt.com:443
+2024/05/31 08:55:35 listen tcp :443: bind: permission denied
+2024/05/31 08:56:04 Info: Starting Service on: http://localhost:8080
+2024/05/31 08:58:09 Info: Starting Service on: http://0.0.0.0:8080

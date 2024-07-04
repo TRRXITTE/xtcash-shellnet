@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/assets/images/fav_icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/unnamed@1.2.6/dist/css/unnamed.min.css" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="/assets/css/tabs.css"/>
+        <link rel="stylesheet" href="/assets/css/widgets.css"/>
+        <link rel="stylesheet" href="/assets/css/shellnet.common.css"/>
+        <link rel="stylesheet" href="/assets/css/main.css"/>
+        <meta name="description" content="A secure, easy-to-use wallet for XTE payments. ">
+        <title>XTE online wallet</title>
+    </head>
+    <script>
+        function setSrcQuery(e, q) {
+            var src  = e.src;
+            var p = src.indexOf('?');
+            if (p >= 0) {
+                src = src.substr(0, p);
+            }
+            e.src = src + "?" + q
+        }
+        function playAudio() {
+            var le = document.getElementById("lang");
+            var lang = le.options[le.selectedIndex].value;
+            var e = document.getElementById('audio')
+            setSrcQuery(e, "lang=" + lang)
+            e.style.display = 'block';
+            e.autoplay = 'true';
+            return false;
+        }
+        function changeLang() {
+            var e = document.getElementById('audio')
+            if (e.style.display == 'block') {
+                playAudio();
+            }
+        }
+        function reload() {
+            setSrcQuery(document.getElementById('image'), "reload=" + (new Date()).getTime());
+            setSrcQuery(document.getElementById('image2'), "reload=" + (new Date()).getTime());
+            setSrcQuery(document.getElementById('audio'), (new Date()).getTime());
+            return false;
+        }
+    </script>
+    <body>
+        <div class="full-container">
+            <div class="header title">
+                <span>SHELLNET</span>
+            </div>
+            <div class="content">
+                <div class="tab_container container">
+                        {{ if index .PageAttr.Messages "error"}}
+                        <div class="alert error">
+                            <input type="checkbox" id="alert1"/>
+                            <label class="close" title="close" for="alert1">&times
+                            </label>
+                            <p class="inner">
+                            <strong>Error!</strong> {{ index .PageAttr.Messages "error" }}
+                            </p>
+                        </div>
+                        {{ end }}
+                        {{ if index .PageAttr.Messages "success"}}
+                        <div class="alert success">
+                            <input type="checkbox" id="alert1"/>
+                            <label class="close" title="close" for="alert1">&times
+                            </label>
+                            <p class="inner">
+                            <strong>Success!</strong> {{ index .PageAttr.Messages "success" }}
+                            </p>
+                        </div>
+                        {{ end }}
+                    <input id="tab1" type="radio" name="tabs" {{ if eq .PageAttr.Element "login" }}checked{{ end }}>
+                    <label for="tab1"><span>Login</span></label>
+
+                    <input id="tab2" type="radio" name="tabs" {{ if eq .PageAttr.Element "signup" }}checked{{ end }}>
+                    <label for="tab2"><span>Signup</span></label>
+
+                    <section id="content1" class="tab-content">
+                        <div class="container">
+                        <h1 class="center-text">Log Into Your Account</h1>
+                        <form action={{ printf "%s%s" .PageAttr.URI "/login" }} method="POST">
+                            <div class="input-field grey-input">
+                            <span class="user-icon"></span>
+                            <input type="text" name="username" placeholder="username" autofocus="" pattern="^.{1,64}$" required/>
+                            </div>
+
+                            <div class="input-field grey-input">
+                            <span class="lock-icon"></span>
+                            <input type="password" name="password" placeholder="password" required/>
+                            </div>
+                         <p>Type the numbers you see in the picture below:</p>
+                            <p><img id=image src="/captcha/{{.CaptchaID}}.png" alt="Captcha image"></p>
+                            <a href="#" onclick="reload()">Reload</a>
+                            <input type=hidden name=captchaId value="{{.CaptchaID}}"><br>
+                            <input name=captchaSolution>
+                            <button class="btn btn-primary button-green">Login</button>
+                        </form>
+                        </div>
+                    </section>
+
+                    <section id="content2" class="tab-content">
+                        <div class="container">
+                            <h1 class="center-text">Create a New Account</h1>
+                                <form action={{ printf "%s%s" .PageAttr.URI "/signup" }} method="POST">
+                                    <div class="input-field grey-input">
+                                        <span class="user-icon"></span>
+                                        <input type="text" name="username" placeholder="username" autofocus="" pattern="^.{1,64}$" required/>
+                                    </div>
+
+                                    <div class="input-field grey-input">
+                                        <span class="lock-icon"></span>
+                                        <input type="password" name="password" placeholder="password" required/>
+                                    </div>
+                                    <div class="input-field grey-input">
+                                        <span class="lock-icon"></span>
+                                        <input type="password" name="verify_password" placeholder="verify password" required/>
+                                    </div>
+                                         <p>Type the numbers you see in the picture below:</p>
+                            <p><img id=image2 src="/captcha/{{.CaptchaID}}.png" alt="Captcha image"></p>
+                            <a href="#" onclick="reload()">Reload</a>
+                            <input type=hidden name=captchaId value="{{.CaptchaID}}"><br>
+                            <input name=captchaSolution>
+
+                                    <p>By using Shellnet, you are agreeing to our <a href="/tos">Terms of Service</a></p>
+                                    <button class="btn btn-primary button-green">Signup</button>
+                                </form>
+                            </div>
+                    </section>
+                </div>
+            </div>
+            <footer class="footer">
+                <code>TRRXITTE Int., incorporate &copy; 2024</code>
+            </footer>
+        </div>
+    </body>
+</html>
