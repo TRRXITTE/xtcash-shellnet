@@ -7,8 +7,6 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/traaitt/turtlecoin-rpc-go/walletd"
-
 	_ "github.com/lib/pq"
 
 	"github.com/julienschmidt/httprouter"
@@ -77,10 +75,10 @@ func getStatus(res http.ResponseWriter, req *http.Request, p httprouter.Params) 
 		address,
 	)
 	json.NewDecoder(walletdResponse).Decode(&temp)
-	trtl := temp["result"].(map[string]interface{})["availableBalance"].(float64) / divisor
-	temp["result"].(map[string]interface{})["availableBalance"] = trtl
-	trtl = temp["result"].(map[string]interface{})["lockedAmount"].(float64)
-	temp["result"].(map[string]interface{})["lockedAmount"] = trtl / divisor
+	xte := temp["result"].(map[string]interface{})["availableBalance"].(float64) / divisor
+	temp["result"].(map[string]interface{})["availableBalance"] = xtcash
+	xte = temp["result"].(map[string]interface{})["lockedAmount"].(float64)
+	temp["result"].(map[string]interface{})["lockedAmount"] = xtcash / divisor
 
 	response.Data["balance"] = temp["result"]
 	walletdResponse = walletd.GetStatus(
