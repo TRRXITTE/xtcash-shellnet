@@ -17,7 +17,7 @@ var (
 
 const (
 	// Forking config.
-	addressFormat          = "^cash([a-zA-Z0-9]{95}|[a-zA-Z0-9]{183})$"
+	addressFormat          = "^cash([a-zA-Z0-9]{94}|[a-zA-Z0-9]{183})$"
 	divisor        float64 = 100 // This is 100 for XTCASH
 	transactionFee         = 100  // This is 10 for XTCASH
 )
